@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Front-End Developer Portfolio
+
+## Portfolio Overview
+
+Animated, single-page portfolio for a front-end developer built with Next.js 15, Tailwind CSS 4, and Framer Motion. The layout highlights hero storytelling, case studies, skillsets, experience, testimonials, and a polished contact CTA.
+
+## Key Features
+
+- Motion-rich hero with floating spotlights and dual CTA buttons.
+- Project carousel with hover reveals and animated call-to-action links.
+- Skills grid paired with infinite marquees for process highlights.
+- Timeline-style experience section and testimonial quotes.
+- Gradient contact card with quick-access social and email links.
+
+## Tech Stack
+
+- Next.js 15 (App Router)
+- TypeScript
+- Tailwind CSS 4
+- Framer Motion
+- lucide-react icon set
+
+## Project Structure
+
+- `src/app/page.tsx` — Composition of all portfolio sections.
+- `src/components/` — Individual section components and shared UI primitives.
+- `src/lib/portfolio-data.ts` — Structured data for hero content, projects, skills, timeline, testimonials, and contact links.
+- `public/` — Static assets (add your own imagery, favicons, résumé, etc.).
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# open http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Available Scripts
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- `npm run dev` — Start the development server with Turbopack.
+- `npm run lint` — Lint the codebase using ESLint.
+- `npm run build` — Compile the production bundle.
+- `npm run start` — Serve the production build locally.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Customization Checklist
 
-## Learn More
+- Update `src/lib/portfolio-data.ts` with your name, biography, project links, and contact details.
+- Replace placeholder URLs such as résumé download and live demos.
+- Swap gradients, imagery, or iconography to match your branding.
+- Add actual assets (logo, social previews, résumé PDF) inside `public/`.
+- Adjust metadata in `src/app/layout.tsx` for SEO and sharing.
 
-To learn more about Next.js, take a look at the following resources:
+## Deployment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The project is ready for platforms like Vercel, Netlify, or your preferred host:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm run build
+npm run start
+```
 
-## Deploy on Vercel
+Ensure environment variables or analytics scripts are configured in `next.config.ts` before deploying.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This starter portfolio is provided without a license. Add your preferred license file before publishing.
