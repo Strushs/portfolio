@@ -1,5 +1,3 @@
-import { desc } from "framer-motion/client";
-
 export const heroContent = {
   name: "Dawid Strużyński",
   title: "Front-End Developer & Computer Science Student",
@@ -26,22 +24,31 @@ export const spotlightHighlights = [
 
 export const projects = [
   {
-    title: "WSB Finder",
+    title: "Finderito",
     description:
       "A Tinder-inspired matching platform for WSB Merito students built with React, Next.js, and Supabase. Includes JWT authentication, REST API integration, and a fully responsive UI.",
     type: "personal",
     tags: ["Next.js", "React", "TypeScript", "Supabase", "JWT"],
-    liveUrl: "https://github.com/Strushs/wsbfinder",
-    repoUrl: "https://github.com/Strushs/wsbfinder",
+    liveUrl: "https://github.com/Strushs/finderito",
+    repoUrl: "https://github.com/Strushs/finderito",
   },
   {
-    title: "NextSTEP",
+    title: "Neon Map",
     description:
-      "A web application that helps student's choose their field of study based on quiz, test's and AI. W.I.P",
+      "An interactive map application showcasing custom styling and dynamic content rendering in React.",
     type: "personal",
-    tags: ["Next.js", "React", "TypeScript", "Supabase", "AI"],
-    liveUrl: "https://github.com/Strushs/nextstepv1",
-    repoUrl: "https://github.com/Strushs/nextstepv1",
+    tags: [
+      "React",
+      "TypeScript",
+      "Next.JS",
+      "Tailwind CSS",
+      "Maplibre",
+      "API integration",
+      "Responsive design",
+      "Firebase",
+    ],
+    liveUrl: "https://github.com/Strushs/neon-map",
+    repoUrl: "https://github.com/Strushs/neon-map",
   },
   {
     title: "Handmade Bracelets Store",
@@ -61,15 +68,6 @@ export const projects = [
     liveUrl: "https://github.com/Strushs/Wisielec",
     repoUrl: "https://github.com/Strushs/Wisielec",
   },
-  {
-    title: "Terminal Mockup",
-    description:
-      "Web-based terminal simulation showcasing command parsing, state management, and custom styling in React.",
-    type: "personal",
-    tags: ["React", "TypeScript"],
-    liveUrl: "https://github.com/Strushs/Terminal",
-    repoUrl: "https://github.com/Strushs/Terminal",
-  },
 ];
 
 export const skills = [
@@ -84,11 +82,12 @@ export const skills = [
       "React",
       "Next.js",
       "Vue.js",
+      "SCSS",
     ],
   },
   {
     category: "Back-end & Data",
-    items: ["Supabase", "MySQL", "FastAPI", "Python", "C#"],
+    items: ["Supabase", "Firebase", "MySQL", "FastAPI", "Python", "C#"],
   },
   {
     category: "Tooling",
